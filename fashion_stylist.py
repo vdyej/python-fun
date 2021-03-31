@@ -7,11 +7,16 @@ footwear = ["Doc Martens", "Birkenstocks", "flip-flops", "Mary Janes", "stiletto
 compliment = ["Stunning!", "Gorgeous!", "Too cool!", "Breathtaking!", "Phenomenal!", "Cover-worthy!", "Unbelievably chic!", "Striking!", "Daring!"]
 
 name = input("Hi. What's your name? ")
-days = int(input("How many days of outfits should I plan for you?"))
+days = int(input("How many days of outfits should I plan for you? "))
 
-print("Here's a schedule of outfits that'll look fab on you, " + name + "! ")
+if days == 0:
+    print ("Bummer, I was looking forward to styling you.")
 
-for x in range(1,days): 
-    print("Day " + str(x) + ":  A " + random.choice(top) + " over " + random.choice(bottom) 
-    + "! Add a " + random.choice(accessory) + ", throw on a pair of " + random.choice(footwear) + ". " + random.choice(compliment))
+else: 
+    print("Here's a schedule of outfits that'll look fab on you, " + name + "! ")
+
+    for x in range(0,days): 
+        print("Day " + str(x + 1) + ":  A " + random.choice(top) + " over " + random.choice(bottom) 
+        + "! Add a " + random.choice(accessory) + ", throw on a pair of " + random.choice(footwear) + ". " + random.choice(compliment))
+
 
