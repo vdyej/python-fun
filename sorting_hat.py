@@ -4,7 +4,7 @@ houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
 
 name = input("What's your name? ")
 
-answer = input("Which of the following best describes you? A) Brave & Helpful   B) Patient & Loyal   C) Intellligent & Witty   D) Ambitious & Cunning :")
+answer = (input("Which of the following best describes you? A) Brave & Helpful   B) Patient & Loyal   C) Intellligent & Witty   D) Ambitious & Cunning : d")).upper()
 
 if answer == "A":
     match = "Gryffindor"
